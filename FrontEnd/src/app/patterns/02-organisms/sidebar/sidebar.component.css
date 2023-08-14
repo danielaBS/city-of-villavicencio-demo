@@ -1,0 +1,53 @@
+.sidebar-container {    
+    height: 70vh;
+    position: absolute;
+    border-radius: 0 1rem 1rem 0;
+  }
+  .example-sidenav {
+    min-width: 50px;
+    width: inherit !important;
+    background-color: #2B5AC4;
+    border-radius: 0 1rem 1rem 0;
+  } 
+
+  .sidebar-container2 {    
+    height: 70vh;
+    margin: 1rem 0;    
+    display: flex;
+    justify-content: center;
+    position: absolute;   
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .example-sidenav2 {
+    background-color: #2B5AC4;
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+  } 
+
+  .sidebar-toggler {
+    position: relative;
+    top: 10px;
+    z-index: 9;
+    margin: 8px 12px;
+    width: 30px;
+    height: 30px;
+    background-color: #2B5AC4;
+  }
+  
+  .decorator:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    top: 3em;
+    border-top: 2px solid rgb(218, 215, 215);
+    margin: 0 10px;
+    z-index: 9;
+  }
+  @media (max-width:724px) {
+    .example-container{
+      width: 40%;
+    }
+  }

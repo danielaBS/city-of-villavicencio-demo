@@ -1,0 +1,35 @@
+.news {
+    padding: 1rem;
+}
+
+.news-button {
+    padding: 1rem 6rem 0 0;
+}
+.news-button .btn {
+    border: 1px solid #2b5ac4;
+    border-radius: 0.8rem;
+    font-size: 12px;
+    padding: 8px 16px !important;
+    color: #2b5ac4;
+
+}
+.partners-container {
+    padding: 1.5rem 8rem;
+}
+@media (max-width: 768px) {
+    .card-container {        
+        display: block !important;
+    }
+    .card-news {
+        justify-content: center !important;
+        width: 96%;
+    }
+    .news-button {
+        padding-right: 2rem;
+    }
+  }
+  
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  }

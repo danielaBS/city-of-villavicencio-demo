@@ -1,0 +1,46 @@
+.btn {
+    background:#2B5AC4 !important;
+    border-radius: 18px !important;
+    float: right;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    background:#2B5AC4 !important;
+    cursor: pointer;
+    border-radius: 18px;
+    width: 100px;
+}
+
+.contact-menssaje{
+    margin-top: 10px;
+}
+.form-check{
+    margin: 1rem 0;  
+}
+
+
+@media (max-width: 768px) {
+
+    .content-info-form{
+        margin-left: 1rem !important;
+        justify-content: center !important;
+        max-width: 300px;
+    }
+   
+    .contact-form
+    {
+        margin-top: 5rem !important;
+        flex-wrap: unset;
+        width: 97%;
+        margin-left: 1rem;
+    }
+    .contact-column{
+        max-width: 90%;
+    }
+
+  }
+  
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  }

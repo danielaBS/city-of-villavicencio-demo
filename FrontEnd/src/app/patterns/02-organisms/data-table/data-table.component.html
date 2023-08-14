@@ -1,0 +1,39 @@
+<div class="tableFixHead" id="data-table" (window:resize)="onResize($event)">
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th *ngFor="let header of tableHeaders; let i = index" >
+                        <h6 style="white-space: nowrap; cursor: pointer" (click)="ordenarColumnas(i)">
+                            <b>{{header}}</b>
+                            <i *ngIf="i !== ordenActivo" class="fas fa-angle-right" style=" margin-left: 10px; "></i>
+                            <i *ngIf="i === ordenActivo && !ordenAscendente" class="fas fa-angle-down" style=" margin-left: 10px; "></i>
+                            <i *ngIf="i === ordenActivo && ordenAscendente" class="fas fa-angle-up" style=" margin-left: 10px; "></i>
+                        </h6>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of pagedItems; let j=index">
+                    <td *ngFor="let header of tableHeaders; let i=index">
+                        <h6>{{ d[i] }}</h6>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- paginacion -->
+<!-- *ngIf="data !== undefined && data.length > 25" -->
+<div class="col-sm-12 text-center" style="color: rgb(7, 71, 166)!important;">
+    <div *ngIf="pager.pages && pager.pages.length" class="btn-group pagination pagination-data">
+        <button (click)="setPage(1)" [ngClass]="{disabled:pager.currentPage === 1}" class="btn btn-default">Primero</button>
+        <button (click)="setPage(pager.currentPage - 1)" [ngClass]="{disabled:pager.currentPage === 1}" type="button" class="btn btn-default"><i class="fas fa-arrow-left"></i></button>
+
+        <button *ngFor="let page of pager.pages" (click)="setPage(page)" class="btn btn-default" [ngClass]="{active:pager.currentPage === page}" style="margin-left: 2px; margin-right: 2px; padding: 5px"> {{page}} </button>
+
+        <button (click)="setPage(pager.currentPage + 1)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="btn btn-default"><i class="fas fa-arrow-right"></i></button>
+        <button (click)="setPage(pager.totalPages)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="btn btn-default">Último</button>
+    </div>
+</div>

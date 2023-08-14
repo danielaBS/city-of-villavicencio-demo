@@ -1,0 +1,60 @@
+<button class="sidebar-toggler" *ngIf="(isHandset$ | async)" (click)="toggleNavbar();">
+</button> 
+<mat-sidenav-container class="sidebar-container" [@slideInOut]="menuState" >
+  <mat-sidenav #sidenav mode="side" class="example-sidenav " 
+  (mouseenter)="showFiller = true; menuState='in'" (mouseleave)="showFiller = false; menuState='out'"
+  [opened]="(isHandset$ | async) === false">
+     <ul>
+      <li *ngFor="let link of sidebarLinks" [ngClass]="('sidebar-link ' + (link.decorator ? 'decorator': ' ')) "><a [id] ="link.id" [name]="link.tittle" (click)="changeData($event)"><div class="icon"><i [ngClass]="link.icon"></i></div><span>{{link.tittle}}</span></a></li>      
+      <mat-expansion-panel class="white" [togglePosition]="(!showFiller ? 'after' : 'before')">
+        <mat-expansion-panel-header class="mat-list-item-content" >
+          <a class="d-flex align-items-center">
+            <span class="routerText">Visualizar más</span>
+          </a>
+        </mat-expansion-panel-header>
+        <mat-list-item routerLinkActive="active">
+          <a class="d-flex align-items-center" routerLink="">
+            <span><i class="fas fa-scroll fa-lg"></i></span>
+            <span class="routerText">Submenú 1</span>
+          </a>
+        </mat-list-item>
+        <mat-list-item routerLinkActive="active">
+          <a class="d-flex align-items-center" routerLink="">
+            <span><i class="far fa-clock fa-lg"></i></span>
+            <span class="routerText">Submenú 2</span>
+          </a>
+        </mat-list-item>            
+      </mat-expansion-panel>
+    </ul>
+  </mat-sidenav>
+</mat-sidenav-container>
+<mat-sidenav-container class="sidebar-container2 nav-opened">
+  <mat-sidenav #sidenav2 mode="side" [opened]="openBar" class="example-sidenav2" [@slideInOutMovil]="menuStateMovil">
+     <ul class="justify-start">
+      <li *ngFor="let link of sidebarLinks" [ngClass]="('sidebar-link ' + (link.decorator ? 'decorator': ' ')) "><a [id] ="link.id" [name]="link.tittle" (click)="changeData($event)"><i [ngClass]="link.icon"></i><span>{{link.tittle}}</span></a></li>      
+      <mat-expansion-panel class="white">
+        <mat-expansion-panel-header class="mat-list-item-content" >
+          <a class="d-flex align-items-center">
+            <span class="routerText">Visualizar más</span>
+          </a>
+        </mat-expansion-panel-header>
+        <mat-list-item routerLinkActive="active">
+          <a class="d-flex align-items-center" routerLink="">
+            <span><i class="fas fa-scroll fa-lg"></i></span>
+            <span class="routerText">Submenú 1</span>
+          </a>
+        </mat-list-item>
+        <mat-list-item routerLinkActive="active">
+          <a class="d-flex align-items-center" routerLink="">
+            <span><i class="far fa-clock fa-lg"></i></span>
+            <span class="routerText">Submenú 2</span>
+          </a>
+        </mat-list-item>            
+      </mat-expansion-panel>
+    </ul>
+  </mat-sidenav>
+</mat-sidenav-container>
+
+  <!-- Copyright 2022 Google LLC. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at https://angular.io/license -->

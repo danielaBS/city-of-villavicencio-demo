@@ -1,0 +1,25 @@
+<div class="content d-flex row">
+	<div class="contenedor">
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior"(click)="prevSlide()">
+					<i class="fas fa-chevron-left"></i>
+				</button>      
+				<div class="carousel__lista d-flex flex-row justify-content-around">
+					<div class="carousel__elemento" *ngFor="let icon of showIcons; let i=index">
+            			<!--Iconos-->
+						<a href={{icon.href}} title="">    
+            			<img class="" src={{icon.url}} height="50px"/></a>        
+						<p class="text-img">{{icon.text}}</p>
+					</div>
+				        				
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente" (click)="nextSlide()">
+					<i  class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>

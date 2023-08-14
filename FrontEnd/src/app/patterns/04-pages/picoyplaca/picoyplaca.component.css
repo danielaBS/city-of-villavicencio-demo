@@ -1,0 +1,61 @@
+
+
+.picoyplaca{
+
+    margin-right: auto;
+
+    margin-top: 3rem;
+
+    margin-left: 5rem;
+
+}
+.card-container{
+    max-width: 85%;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.card-container a{
+    padding: 0.5rem 2.1rem 0.5rem 0 !important;
+  }
+  
+
+
+@media (max-width: 768px) {
+
+    .card-container {        
+
+        display: block !important;
+
+    }
+
+    .card-text {
+
+        justify-content: center !important;
+
+        width: 96%;
+
+    }
+
+    .picoyplaca{
+
+        margin-left: 1rem !important;
+
+        justify-content: center !important;
+
+    }
+
+
+
+  }
+
+ 
+
+  @media
+
+  only screen and (max-width: 760px),
+
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  }

@@ -1,0 +1,33 @@
+<form action="" method="" class="contact-form justify-content-center">
+  <div class="contact-column">
+    <div class="contact-column row">
+      <div class="col-md-4 col-sm-12 my-2" *ngFor="let input of inputComponent">
+        <!-- inputs  -->
+        <label for="username" ngModel required>{{ input.label }} </label>
+        <input-component [inputComp]="input"></input-component>
+      </div>
+    </div>
+
+    <div class="contact-menssaje row">
+      <div class="col">
+        <label for="username">{{ textareaComponent.label }}</label>
+        <!-- Description-->
+        <textarea-component
+          [textareaComp]="textareaComponent"
+        ></textarea-component>
+      </div>
+    </div>
+
+    <div class="form-check">
+      <input-check [inputCheck]="inputCheck"></input-check>
+      <label class="form-check-label" for="flexCheckDefault">
+        {{ inputCheck.label }}
+      </label>
+    </div>
+
+    <!-- </div> -->
+    <div class="text-center">
+      <button-content [buttonComp]="infoButt"></button-content>
+    </div>
+  </div>
+</form>

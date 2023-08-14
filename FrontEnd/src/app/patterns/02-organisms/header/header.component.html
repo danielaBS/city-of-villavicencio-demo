@@ -1,0 +1,18 @@
+<!-- <div class="toolbar d-flex justify-content-between" role="banner"> -->  
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/home" target="_blank">
+    <image-link [imgInfo]="imgInfoV"></image-link>
+  </a>  
+  <button class="navbar-toggler" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>    
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <div class="tittle-responsive">
+      <navbar-list class="margin-around" [links]="links" targetType="_self"></navbar-list>
+    </div>
+  </div>
+  <a class="img-right">
+    <image-link [imgInfo]="imgInfoS"></image-link>
+  </a>
+</nav>
+ 

@@ -1,0 +1,50 @@
+<!--banner informativo-->
+<div class="content-banner d-flex ">
+  <div class="content-banner-information"> 
+    <label-block [info]="BanerFirstTab"></label-block>
+  </div>
+  <img class="img-banner" src="https://www.hazunaweb.com/imagenes/prueba.jpg" alt="img-information">
+</div>
+
+    <div class ="tittle">
+          <section-header [data]="dataHeader"></section-header>
+    </div>
+    <div class="contactos">
+    <div class="card-container d-flex flex-row col-md-12 col-sm-12 justify-content-center"> 
+         <a target="_blank" *ngFor="let card of cardsContactos">
+           <div class = {{card.line}}>
+          <hr class="clearfix w-100 d-md-none pb-3 ">
+                <contactos-card [cardInfo]="card"></contactos-card>
+              </div>
+        </a>
+  
+    </div>
+    </div>
+
+<div class="">
+    <div class="content-contact d-block justify-content-center">
+    <div class="content-banner-information">
+        <ul class="no-padding"  >
+            <label-block [info]="Correo"></label-block>
+        </ul> 
+    </div>
+    <app-form></app-form>
+    </div>
+    <div class="content-banner-information">
+        <ul class="no-padding">
+             <label-block [info]="Recursos"></label-block>
+        </ul> 
+    </div>
+
+    <div class="icons-pqr d-flex justify-content-center">
+    <div class="col-md-2">
+        <a href="" target="_blank"><img class="svg-icon" src="../../../../assets/images/iconos/buzon_1.svg"/></a>
+        <p>PQRS (con identificación)</p>
+    </div>
+
+    <div class="col-md-2">
+        <a href="" target="_blank"><img class="svg-icon" src="../../../../assets/images/iconos/buzon_1.svg"/></a>
+        <p>PQRS (Anónima)</p>
+    </div>
+  </div>
+</div>

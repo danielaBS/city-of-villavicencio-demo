@@ -1,0 +1,14 @@
+<div class="news">
+    <section-header [data]="dataHeader"></section-header>
+    <div class="card-container d-flex flex-row col-md-12 col-sm-12 justify-content-center">    
+        <a [href]="card.href" target="_blank" *ngFor="let card of cardsData">
+            <news-card class="no-margin" [cardInfo]="card"></news-card>
+        </a>        
+    </div>
+    <div class="news-button d-flex justify-content-end">    
+        <a href="#" class="btn">Ver más noticias</a>
+    </div>
+</div>
+<div class="partners-container d-flex flex-wrap justify-content-around ">
+    <image-link *ngFor="let logo of partners" [imgInfo]="logo"></image-link>
+</div>

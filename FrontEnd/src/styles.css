@@ -1,0 +1,425 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p.no-margin {
+  margin: 0 !important;
+}
+a.no-padding {
+  padding: 0 !important;
+}
+
+a, li, ul {
+    text-decoration:none !important;
+    padding: 0.5rem 0.1rem 0.5rem 0 !important;
+}
+.card-container a{
+  padding: 0.5rem 2.1rem 0.5rem 0 !important;
+}
+
+a:link, a:visited, a:active, a:hover {
+  color: inherit;
+}
+
+.margin-around a {
+  margin: 0 1.3rem;
+}
+
+a span {
+  margin-left: 1rem;
+}
+
+.mat-sidenav a {
+  color: white;
+}
+
+.sidebar-link a {
+  color: white !important;
+  cursor: pointer;
+  display: inline-flex;
+}
+.mat-drawer-inner-container {
+  overflow: hidden !important;
+}
+
+.sidebar-link .icon {
+  width: 50px;
+  text-align: center;
+}
+
+.sidebar-link span {
+  margin-left: 1rem;
+  width: auto;
+  white-space:nowrap;
+}
+
+li:not(.nav-opened):not(.sidebar-link),li:not(.mat-accordion) {
+  padding: 0.2rem 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+.justify-center li {
+  justify-content: center !important;
+}
+
+.justify-start li {
+  padding-left: 1rem !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+
+.mat-expansion-panel-header > span.mat-content {
+  margin: 0.6rem 0;
+}
+
+.mat-expansion-panel-header.mat-expansion-toggle-indicator-before {
+  flex-direction: row !important
+}
+
+.mat-expansion-panel-header {
+  padding: 0 1rem !important;
+  height: 3rem;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0 !important;
+}
+
+.mat-expansion-panel-header.mat-expanded,
+.mat-expansion-panel-header.mat-focus,
+.mat-expansion-panel-header:hover {
+  background: rgba(43,90,196,0.15) !important;
+}
+
+.accordion-tramites .mat-expansion-panel-body {
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.negrilla {
+  font-weight: 600;
+}
+.accordion-publicaciones .mat-expansion-panel-body {
+  min-height: 40vh;
+}
+.blue {
+  color: #2b5ac4;
+}
+
+.blue-bold {
+color: #2b5ac4;
+font-weight: 600;
+}
+.blue-bold-font {
+  color: #2b5ac4;
+  font-weight:600;
+  font-size: 25px;
+}
+.mat-tab-label{
+  color: #2b5ac4 !important;
+  font-size: 25px !important;
+  font-weight:600;
+}
+.mat-tab-labels{
+  margin: 0 5rem 0;
+  margin-left: 0px;
+  width: fit-content;
+  border-bottom: 1px solid #444444;
+}
+.mat-tab-list{
+  max-width: 18.9% ;
+  margin:0 5rem 0 ;
+}
+.white-bold-font {
+  color: #ffff;
+  font-size: 20px;
+  font-weight:800;
+}
+.white-bold {
+  color: #ffff;
+  font-size: 25px;
+  font-weight:800;
+}
+.white {
+  color: white !important;
+}
+
+.contrast, .contrast .footer2  {
+  color: white !important;
+  background-color: black !important;
+}
+
+.contrast a,.contrast p,.contrast span,.contrast input:not(.form-control),.contrast ul, .contrast li,.contrast label,.contrast h1,.contrast h2,.contrast h3,.contrast h4,.contrast h5 {
+  color: white !important;
+}
+
+.svg-icon {
+  height: 2.5rem !important;
+  margin-left: 40px ;
+}
+
+.gray-border {
+  border-radius: 1rem;
+  border: solid #9e9e9e 1px;
+}
+
+.gray-border-tops {
+  border-width: 0.8px 0;
+  border-color: #6e6e6e;
+  border-style: solid ;
+  border-radius: 0px !important;
+}
+
+.header {
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-data {
+  margin: 0.8rem;
+  padding: 0 !important;
+
+}
+.card-picoyplaca {
+  margin: 0.8rem;
+  padding: 0 !important;
+
+  margin-right: 60px;
+}
+.card-body {
+  padding: 1.5rem 0 0;
+}
+.card-date {
+  font-size: 10px;
+  color: #444444;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #2b5ac4;
+}
+
+.card-title1 {
+  font-size: 14px;
+  color: #2b5ac4;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 12px;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color:  #2b5ac4 ;
+  color: #444444;
+  height: 4px;
+} 
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #6c757d;
+  content: ">";
+  margin: 0 5px;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.bullets  {
+  display: list-item !important;
+  list-style-position: inside !important;
+  list-style: disc !important;
+}
+
+.content-banner{
+  background-color: #2B5AC4;
+  padding: 0px;
+  width: 100%;
+  height: 20rem;
+}
+
+.content-banner-information{
+  margin-left: 100px;
+  height: auto;
+  width: 82%;
+  display: flex;
+  align-items: center;
+}
+
+.content-banner2-information{
+  margin-left: 100px;
+  height: auto;
+  width: 82%;
+  display: flex;
+  align-items: center;
+}
+
+.title-info{
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFF;
+  width: 2px;
+}
+
+.text-info{
+  font-size: 14px;
+  color: #FFFF !important;
+  max-width: 450px;
+}
+
+.breadcrumbs, .accordion-tramites label-data, .accordion-tramites  label-data, .arrgInfo  label-data {    
+  margin: 0 0 0 7rem !important;
+}
+.pager {
+  float: right;
+  margin: 0 2rem 2rem 0 ;
+}
+
+.mat-accordion {
+  width: 90%;
+  display: block;
+  border-radius: 1rem;
+  height: 70vh;
+  margin: 0 auto !important;
+  overflow-y: auto;
+}
+
+.contact-form{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+}
+
+.form-control{
+  border-radius: 15px !important;
+}
+
+.content-info-form{
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+.title-form{
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B5AC4;
+  width: auto;
+  height: 1rem;
+}
+.text-form{
+  width: 40rem;
+  height: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  color:#444444 !important;
+}
+.navbar-brand {
+  margin-left: 18px;
+}
+.navbar-list {
+  display: block;
+  color: #000000 !important;
+  margin-left: 5rem !important;
+  margin-right: 5rem;
+}
+
+.btn-form{
+  background:#2B5AC4 !important;
+  border-radius: 18px !important;
+  border: none;
+  padding: 0.3rem;
+  float: right;
+  width: 100px;
+}
+
+.img-banner{
+  float: right  !important;
+}
+.pager {
+  float: right;
+  margin: 0 4rem 2rem 0 ;
+}
+.v-line{
+  border-right:2px solid #cccccc;
+  height: 100%;
+}
+.header-container {
+  display: flex;
+}
+
+.btn-default.active, .btn-default:focus, .btn-default:hover {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.contrast, .contrast .table {
+  color: white !important;
+  background-color: black !important;
+}
+
+.height-defined {
+  height: 6rem
+}
+
+@media (max-width:724px) {
+  .height-defined {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .text-small label {
+    width: 75% !important;
+    margin: 1rem 0;
+  }
+  .mat-accordion {
+    width: 80%;
+    margin:  0 auto !important;
+}
+.pager {
+  float: right;
+  margin: 0 0rem 2rem 0 ;
+}
+  .search{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .v-line{
+    border-right:0;
+  }
+  .breadcrumbs, .accordion-tramites label-data, .accordion-tramites  label-data, .arrgInfo  label-data {    
+    margin: 0 0 0 2rem !important;
+  }
+  .header-container {
+    display: block;
+  } 
+}
+
+
+@media (max-width: 599px)
+{
+.mat-tab-label {
+    min-width: 150px !important;
+    justify-content: center !important; 
+}
+.mat-tab-list{
+  border-bottom: none;
+  margin-left: 35px!important;
+}
+.mat-tab-labels{
+  margin-left: 0px;
+}
+
+.search{
+  width: 100%;
+  margin: 0;
+}
+
+
+}

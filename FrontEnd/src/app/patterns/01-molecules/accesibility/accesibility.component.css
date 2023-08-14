@@ -1,0 +1,23 @@
+.accesibility-bar {
+    position: fixed;
+    right: 0;
+    top: 45vh;
+    width: 2.5rem;
+    height: 6.5rem;
+    background-color: #2b5ac4;
+    z-index: 9;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+    color: white;
+    float: right;
+    padding: 0.5rem;
+}
+.accesibility-bar > span:not(last-child) {
+    cursor: pointer;
+}
+.text-icon {
+    font-size: 1.2rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

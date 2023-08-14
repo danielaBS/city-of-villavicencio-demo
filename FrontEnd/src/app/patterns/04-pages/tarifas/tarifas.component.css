@@ -1,0 +1,10 @@
+.table{
+    height: auto;
+    padding: 0px 80px 20px 120px;
+}
+
+@media (max-width: 724px) {
+    .table {
+        padding: 0 10px ;
+    }
+}

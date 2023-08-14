@@ -1,0 +1,27 @@
+.panel-publicaciones {
+    height: 70vh;
+    overflow-y: auto;
+    width: 84%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.panel-publicaciones li {
+    list-style: circle !important;
+}
+@media (max-width:724px) {
+    .example-container{
+      width: 40%;
+      float: none;
+    }
+
+    .pagination-data {
+        /* display: flex !important; */
+        margin: auto;
+        align-items: center !important;
+        justify-content: center !important;
+        float: none;
+    }
+    
+  }

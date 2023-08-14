@@ -1,0 +1,141 @@
+.content {
+    padding: 0rem;
+    height: max-content !important;
+}
+.footer{
+    background-color: #2B5AC4;
+    width: auto;
+    height: auto;
+    
+}
+.footer-info{
+    flex-direction: row !important;
+}
+.footer2{
+    /* justify: center !important; */
+    position: relative;
+    background-color: white;
+    height: auto ;
+    width: 90%;
+    display: flex;
+    bottom: 50px;
+    margin-left: auto ;
+    margin-right: auto;
+    /* box-shadow: 60px -16px teal gray; */
+    margin-top: 100px;
+    border-radius: 8px;
+    box-shadow: 3px 0px 3px 0px rgb(0 0 0 / 0%), 7px -6px 7px rgb(0 0 0 / 15%);
+}
+
+.iconos_footer_dos{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+ 
+}
+
+.iconos_footer_dos .svg-icon{
+    height: 3rem !important;
+   
+}
+
+.footer .iconos_footer{
+    /* margin-left: 500px; */
+    justify-content: center !important;
+    bottom: 35px;
+    position: relative;
+
+   
+}
+.footer-info {
+    flex-direction: row;
+}
+.partners-container {
+    padding: 1rem 8rem;
+}
+
+.image-link{
+    height: 10px;
+}
+
+@media (max-width: 1023px) {
+    .footer-info {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  
+    .lists-containers {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info{
+        flex-direction: column !important;
+        flex-wrap: wrap;
+    }
+    .list-containers{
+        display:flex;
+        flex-direction: row;
+    }
+    .content {        
+        display: block !important;
+        justify-content: center !important;
+    }
+    .footer2 {
+        display: block !important;
+        justify-content: center !important;
+        width: 90%;
+        height: auto;
+    }
+    .flex-row{
+        flex-direction: row !important;
+    }
+    .footer {
+        width: auto;
+        display: block !important;
+        justify-content: center !important;
+    }
+    .iconos_footer_dos{
+        display: block !important;
+        justify-content: center !important;
+        width: 96%;
+    }
+    .lists-containers {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  }
+    
+
+.footer1 {
+    padding: 1rem;
+}
+.header-footer {
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+.card-footer1 {
+    margin: 0.8rem;
+    padding: 0 !important;
+}
+.card-body {
+    padding: 1.5rem 0 0;
+
+}
+.card-title {
+    font-size: 14px;
+    color: #2b5ac4;
+}
+.card-text {
+    font-size: 12px;
+}
+p {
+    margin: 0;
+}
+

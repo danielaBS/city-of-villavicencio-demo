@@ -1,0 +1,229 @@
+.content-banner{
+  background-color: #2B5AC4;
+  padding: 0px;
+  width: 100%;
+  height: 20rem;
+  
+}
+
+
+.text-info {
+  max-width: 500px !important;
+}
+
+a, li, ul {
+  text-decoration:none !important;
+  padding: 0.5rem 0.4rem 0 0.2rem !important;
+  width: 501px !important;
+}
+
+.content-banner-information ul{
+  margin-top: 5rem;
+}
+
+.content-info-form{
+  
+  padding-left: 50px;
+}
+.title-form{
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B5AC4;
+  width: auto;
+  height: 1rem;
+}
+.text-form{
+  width: 40rem;
+  height: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  color:#444444 !important;
+}
+
+.contact-form{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.contact-menssaje{
+  margin-top: 3rem;
+
+}
+
+.text-center{
+  float: right;
+
+}
+
+.form-control{
+  border-radius: 18px !important;
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+  background:#2B5AC4 !important;
+  cursor: pointer;
+  border-radius: 18px;
+  width: 100px;
+}
+
+
+h3{
+  text-align: center;
+  font-weight: bold;
+}
+h2{
+  font-weight: bold;
+}
+.header-contactos{
+  position: relative;
+  margin-top: 3rem;
+}
+ 
+b{
+  font-weight: bold;
+}
+.header-contactos {
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+.card-contactos {
+  margin: 0.2rem;
+  padding: 0 !important;
+  margin-top: auto;
+}
+.card-body {
+  padding: 1.5rem 0 0;
+  margin:0;
+
+}
+.card-title {
+  font-size: 14px;
+  color: #2b5ac4;
+  font-weight: bold;
+  text-align: center;
+  /* margin: 100px; */
+}
+
+.card-text {
+  font-size: 12px;
+  text-align: top;
+ text-align: top;
+ margin-top: 5px;
+ margin-left: 5rem;
+ margin-right: 5rem;
+ /* margin: 100px; */
+}
+
+.icons-pqr{
+  margin-top: 3rem !important;
+
+}
+
+.content-contact{
+  margin-right: auto;
+  margin-top: 3rem;
+
+}
+.content-info-form {
+  margin-top: 5rem;
+}
+  .contactos{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.tittle{
+  text-align: center;
+  margin-top: 3rem;
+}
+  
+@media (max-width: 768px) {
+  .card-container {        
+    display: block !important;
+    
+}
+.card-contactos {
+    justify-content: center !important;
+    width: 96%;
+}
+.card-text{
+  
+  text-align: center;
+}
+ 
+  .content-banner {     
+      justify-content: center !important;  
+      display: block !important;
+      height: auto;
+  }
+  .content-banner-information {
+      /* margin-left: 5rem;  */
+      width: 50%;
+      height: auto;
+      justify-content: center !important;
+      display: flex;
+      align-items: center;
+  }
+  .text-info{
+      justify-content: center !important;
+
+  }
+  .img-banner {
+    margin-left: 0px; 
+    display: flex;
+    align-items: center;
+    float: none !important;
+    width: 100%;
+  }
+
+  .content-contact{
+      justify-content: center !important;
+      margin-left: 1rem;
+      width: auto;
+  }
+
+
+  .title-form{
+      
+      justify-content: center !important;
+      max-width: 300px;
+  }
+
+  .contact-column{
+      max-width: 90%;
+  }
+
+
+  .icons-pqr{
+
+    margin-top: 3rem !important;
+    margin-left: 100px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .contactos{
+      justify-content: center !important;
+      margin-left: 0;
+  
+      
+  }
+
+}
+
+.no-padding {
+  margin-top: 2rem !important;
+  width: 60% !important;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .no-padding {
+    width: 100% !important;
+  }
+}

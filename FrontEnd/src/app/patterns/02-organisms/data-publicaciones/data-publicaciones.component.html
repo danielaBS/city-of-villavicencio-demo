@@ -1,0 +1,32 @@
+<div class="header-container">
+  <div class="col-md-8 col-sm-12 height-defined">
+    <ul class="d-flex flex-row breadcrumbs">
+      <li class="breadcrumb-item blue-bold" *ngFor="let link of links">
+        {{link}}
+      </li>
+    </ul>
+    <label-data [label]="subtitle" class="text-small"></label-data>
+  </div>
+  <div class="search col-md-4 col-sm-12 height-defined"><app-input-search [data]="pagedItems" [inputText]="inputText" (result)="onResult($event)"></app-input-search></div>
+</div>
+<div class="d-flex flex-column gray-border panel-publicaciones">
+  <ul *ngFor="let item of newData let i=index">
+    <span class="blue-bold">{{item[0]}}</span>
+    <li>
+      <a class="no-padding" href="/">{{item[1]}}</a><span>{{item[2]}}</span>
+    </li>
+  </ul>
+</div>
+<!-- paginacion -->
+<!-- *ngIf="data !== undefined && data.length > 25" -->
+<div class="col-sm-5 pager text-center" style="color: rgb(7, 71, 166)!important;">
+  <div *ngIf="pager.pages && pager.pages.length" class="btn-group pagination pagination-data">
+      <button (click)="setPage(1)" [ngClass]="{disabled:pager.currentPage === 1}" class="btn btn-default">Primero</button>
+      <button (click)="setPage(pager.currentPage - 1)" [ngClass]="{disabled:pager.currentPage === 1}" type="button" class="btn btn-default"><i class="fas fa-arrow-left"></i></button>
+
+      <button *ngFor="let page of pager.pages" (click)="setPage(page)" class="btn btn-default" [ngClass]="{active:pager.currentPage === page}" style="margin-left: 2px; margin-right: 2px; padding: 5px"> {{page}} </button>
+
+      <button (click)="setPage(pager.currentPage + 1)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="btn btn-default"><i class="fas fa-arrow-right"></i></button>
+      <button (click)="setPage(pager.totalPages)" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="btn btn-default">Último</button>
+  </div>
+</div>

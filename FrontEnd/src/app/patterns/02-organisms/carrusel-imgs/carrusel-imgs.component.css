@@ -1,0 +1,33 @@
+.content {
+
+  }
+  .carousel-indicators {      
+      padding-bottom: 1rem 
+  }
+  .picsum-img-wrapper img {
+      object-fit: fill;
+  }
+
+  .w-100 {
+    width: 100%!important;
+    height: 350px;
+}
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon button {
+      width: 2rem;
+      height: 0.15rem;
+      border: none;
+      margin: 0 0.5rem;
+      color: black !important;
+  }
+  @media (max-width: 768px) {
+      .content {
+          height: auto !important;
+          min-height: inherit !important;
+      }
+      .picsum-img-wrapper img {
+          height: 30vh;
+      }
+
+  }

@@ -1,0 +1,13 @@
+.panel-normatividad {
+    height: 70vh;
+    overflow-y: auto;
+    width: 84%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.panel-normatividad li {
+    list-style: circle !important;
+
+}

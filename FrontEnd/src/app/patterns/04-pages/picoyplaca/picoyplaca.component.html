@@ -1,0 +1,12 @@
+
+<div class="picoyplaca">
+    <section-header [data]="dataHeader"></section-header>
+    <div class="card-container d-flex flex-row col-md-12 col-sm-12 justify-content-center">
+        <a target="_blank" *ngFor="let card of cardsPicoyplaca">
+            <div class = {{card.line}}>
+            <hr class="clearfix w-100 d-md-none pb-3">  
+            <picoyplaca-card [cardInfo]="card"></picoyplaca-card>
+        </div>
+        </a>        
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.accordion-tramites {
+    width: 88%;
+}
+
+@media (max-width:724px) {
+    .search{
+        /* height: auto; */
+        padding: 60px; 
+    }
+}
